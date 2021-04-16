@@ -1,0 +1,37 @@
+.row.content {height: 450px}
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+ @media screen and (max-width: 767px) {
+        .sidenav {
+          height: auto;
+          padding: 15px;
+        }
+        .row.content {height:auto;} 
+      }
+body{
+    padding-top: 100px;
+    background: linear-gradient(to bottom right,rgba(246,44,139,75),rgba(69,196,244,75));
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 150px;
+}
+.img-responsive{
+    background-color: white;
+    border: 7px solid darkblue;
+    margin: 10px;
+}
+.login_div{
+  background-color: lightblue;
+  border-radius: 15px;
+  padding: 25px;
+}
+#user_name{
+  width: 50%;
+}
+#icon{
+  height: 50px;
+  width: 50px;
+}

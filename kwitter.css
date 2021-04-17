@@ -1,7 +1,6 @@
 .row.content {height: 450px}
     .sidenav {
       padding-top: 20px;
-      background-color: #f1f1f1;
       height: 100%;
     }
  @media screen and (max-width: 767px) {
@@ -17,6 +16,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 150px;
+    height: 100%;
 }
 .img-responsive{
     background-color: white;
@@ -27,6 +27,7 @@ body{
   background-color: lightblue;
   border-radius: 15px;
   padding: 25px;
+  margin-top: 50px;
 }
 #user_name{
   width: 50%;
@@ -34,4 +35,12 @@ body{
 #icon{
   height: 50px;
   width: 50px;
+}
+h1{
+    font-family: 'RocknRoll One', sans-serif;
+    color: rgb(4, 4, 97);
+}
+h2{
+    font-family: 'Merriweather', serif;
+    color: rgb(61, 5, 75);
 }

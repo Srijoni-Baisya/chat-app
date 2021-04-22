@@ -3,6 +3,9 @@
     <head>
         <title>Kwitter Room</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=RocknRoll+One&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -12,7 +15,7 @@
         <script src="kwitter_room.js"></script>
     </head>
 
-    <body>
+    <body onload="update()">
         <div class="container">
         <button class="glyphicon glyphicon-log-out btn btn-danger" id="logout" onclick="logout()">Logout</button>
         <center>
@@ -20,7 +23,7 @@
                 <img src="chat.png" id="icon">
             </sup></h1>
             <br>
-            <h3 class="color_white"></h3>
+            <h3 class="color_white" id="user_name"></h3>
             <div class="form-group input_div_room_page">
                 <label>#Add Room :</label>
                 <input type="text" id="room_name" class="form-control" placeholder="#RoomName">

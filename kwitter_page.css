@@ -1,0 +1,48 @@
+h1{
+    font-family: 'RocknRoll One', sans-serif;
+    color: rgb(4, 4, 97);
+    margin-top: 100px;
+}
+html,body{
+    height: 100%;
+}
+body{
+    background-image: linear-gradient(to bottom right,rgba(228,45,234,75),rgba(171,69,244,75));
+}#icon{
+    height: 50px;
+    width: 50px;
+}
+#logout{
+    font-size: 20px;
+    float: right;
+}
+#output
+{
+	padding: 10px; 
+    width:80%;
+    border-radius: 15px;
+}
+
+.input_div_message_page
+{
+	position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: rgba(255,255,255,0.8);
+}
+.input_div_message_page label
+{
+    font-family: 'Merriweather', serif;
+    color:black;
+    font-size: 20px;
+}
+.input_div_message_page #msg
+{
+	width: 80%;
+}
+.input_div_message_page button
+{
+	margin-top: 15px;
+	width: 50%; 
+    margin-bottom: 15px;
+}

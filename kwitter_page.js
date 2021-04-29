@@ -34,7 +34,7 @@ function getData() { firebase.database().ref("/"+room_name).on('value', function
     message= message_data['message'];
     like= message_data['like'];
 
-    name_with_tag = "<h4> "+name+" <img class='user_tick' src='tick.png'> </h4>";
+    name_with_tag = "<h4 id='name_msg'> "+name+" <img class='user_tick' src='tick.png'> </h4>";
     console.log(name_with_tag);
     message_with_tag = "<h4 class='message_h4'> "+message+" </h4>";
     like_button = "<button class='btn btn-warning' id= "+firebase_message_id+" value= "+like+" onclick='updateLike(this.id)'>";
